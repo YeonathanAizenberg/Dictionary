@@ -1,4 +1,3 @@
-// import dictionary from '../../utils/dictionary/dictionaryT.json'
 import dictionary from '../../utils/dictionary/dictionary.json'
 
 export function useQuery() {
