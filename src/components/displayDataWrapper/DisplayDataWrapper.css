@@ -1,0 +1,11 @@
+.word-wrapper {
+    border: 2px solid;
+    width: 50%;
+    border-radius: 5px;
+    margin: 1%;
+}
+
+.main {
+    text-decoration: underline;
+    font-weight: bold;
+}
