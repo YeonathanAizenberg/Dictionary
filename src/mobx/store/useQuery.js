@@ -12,12 +12,13 @@ export function useQuery() {
                 correctData
         },
         bringLetterAppear(letter){
-            let correctData
-            //logic To bring the correct data from dictionary
-            this.data.push(
-                correctData
-            )
-            console.log("bringLetterAppear",letter)
+            const allKeys = Object.keys(dictionary[0])
+            const allValue = Object.values(dictionary[0])
+            const letterOnKeys = allKeys.filter(word => word.includes(letter))
+            const letterOnValue = allValue.filter(word => word.includes(letter))
+            const totalLetters = letterOnKeys.length + letterOnValue.length
+            this.data =
+                totalLetters
         },
         bringEnd(letter){
             const adjustDictionary = Object.entries(dictionary[0])
@@ -26,12 +27,10 @@ export function useQuery() {
                 correctData
         },
         bringConjunction(letter){
-            let correctData
-            //logic To bring the correct data from dictionary
-            this.data.push(
+            const adjustDictionary = Object.entries(dictionary[0])
+            const correctData = adjustDictionary.filter(word => word[0].includes(letter))
+            this.data =
                 correctData
-            )
-            console.log("bringConjunction",letter)
         },
     }
 }

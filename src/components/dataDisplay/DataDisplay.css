@@ -10,3 +10,7 @@
     overflow-wrap: break-word;
     margin: 2%;
 }
+
+.found-words {
+    font-style: italic;
+}
