@@ -6,7 +6,6 @@ import './DataDisplay.css';
 
 const DataDisplay = () => {
     const dataStore = useDataStore()
-    console.log(dataStore[0].data.length)
 
     return useObserver(() => (
         <div className='display-data-container'>
